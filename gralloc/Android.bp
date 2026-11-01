@@ -31,6 +31,7 @@ target_board_platform_cc_library_shared {
         "libqdMetaData",
         "libsync",
         "libgrallocutils",
+        "libion",
         "android.hardware.graphics.common@1.1",
     ],
     cflags: [
@@ -45,6 +46,10 @@ target_board_platform_cc_library_shared {
     header_libs: [
         "display_headers",
         "qti_kernel_headers",
+    ],
+    include_dirs: [
+        "system/memory/libion/include",
+        "system/memory/libion/kernel-headers",
     ],
 }
 
